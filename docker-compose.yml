@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web-scraper:
+    build: .
+    volumes:
+      - '.:/app'
+    command: python main.py --condition="Совершенно новый"
